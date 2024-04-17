@@ -1,0 +1,28 @@
+.products {
+    width: 20%;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #f2f2f2;
+  }
+  .img{
+    width: 150px;
+    height: 200px;
+    object-fit: contain;
+    margin: auto;
+  }
+
+  .title-price{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .add {
+    padding: 5px;
+  }
+  
+  .remove {
+    background-color: grey;
+    color: white;
+  }

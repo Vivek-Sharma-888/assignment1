@@ -1,0 +1,23 @@
+.productContainer {
+    width: 70%;
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .product-cart{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sidecartContainer{
+    margin: 25px 0 0 10px;
+    padding:10px;
+    border: 1px solid #f2f2f2;
+    width: 25%;
+}
+
+.checkout-button{
+    margin: 20px 75px;
+}

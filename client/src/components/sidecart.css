@@ -1,0 +1,8 @@
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    border-bottom:1px solid #f9f9f9 ;
+    padding: 2px;
+    align-items: center;
+}
