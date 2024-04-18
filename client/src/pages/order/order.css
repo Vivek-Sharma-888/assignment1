@@ -1,0 +1,21 @@
+.orderContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tableStyle{
+    width: 80%;
+    margin: auto;
+}
+
+.tableStyle,th,td{
+    border:1px solid #f2f2f2 ;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 5px;
+    
+}
+
+th,td{
+    width: 20%;
+}

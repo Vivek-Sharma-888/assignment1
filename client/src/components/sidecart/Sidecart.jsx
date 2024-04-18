@@ -1,7 +1,7 @@
-import React, { useContext, useState } from 'react'
+import React from 'react'
 import './sidecart.css'
-import UpDown from './UpDown'
-import { Cart } from '../context/Cart'
+import UpDown from '../updown/UpDown'
+
 
 const Sidecart = ({cartItem}) => {
 

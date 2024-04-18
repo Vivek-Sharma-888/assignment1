@@ -1,15 +1,14 @@
 import React from "react";
 import './productcard.css';
-import { useContext } from "react";
-import { Cart } from "../context/Cart";
+import { CartValue } from "../../context/Cart";
 
 const ProductCard = ({ item }) => {
-    const {state:{cart},dispatch} = useContext(Cart)
+    const {state:{cart},dispatch} = CartValue();
   return (
     <div className="products" key={item.id}>
       <img src={item.image} alt={item.title} className="img" />
       <div className="title-price">
-       <span>{item.title.slice(0,10)}</span>
+       <span>{item.title.slice(0,12)}</span>
         <span>₹ {item.price}</span>
       </div>
       {

@@ -1,4 +1,4 @@
-import { createContext, useReducer, useState,useEffect } from "react";
+import { createContext, useReducer, useState,useEffect, useContext } from "react";
 import { cartReducer } from "../reducer/CartReducer";
 import axios from 'axios'
 import { ProductUrl } from '../assets/Constant';
@@ -30,4 +30,8 @@ const CartProvider =({children})=>{
     )
 }
 
-export {Cart,CartProvider}
+const CartValue =()=>{
+    return useContext(Cart);
+}
+
+export {CartValue,CartProvider}

@@ -1,10 +1,10 @@
-import React, { useContext, useState } from 'react'
+import React from 'react'
 import './updown.css'
-import { Cart } from '../context/Cart'
+import { CartValue } from '../../context/Cart'
 
 const UpDown = ({cartItem}) => {
    
-   const {dispatch} = useContext(Cart)
+   const {dispatch} = CartValue();
   return (
     <div className='updown'>
     <div>

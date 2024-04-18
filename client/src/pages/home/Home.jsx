@@ -1,15 +1,16 @@
-import React, { useContext } from 'react'
-import Header from '../components/Header'
-import ProductCard from '../components/ProductCard'
+import React from 'react'
+import Header from '../../components/header/Header'
+import ProductCard from '../../components/productcard/ProductCard'
 import './home.css'
-import Sidecart from '../components/Sidecart'
-import { Cart } from '../context/Cart'
+import Sidecart from '../../components/sidecart/Sidecart'
+import { CartValue } from '../../context/Cart'
+import {Link,useNavigate} from 'react-router-dom'
 
 
 
 const Home = () => {
     
-     const {state:{cart},products} = useContext(Cart)
+     const {state:{cart},products} = CartValue();
   return (
     <div>
       <Header />
@@ -29,9 +30,16 @@ const Home = () => {
         )
        })
       }
+      <div style={{display:"flex",justifyContent:"space-between"}}>
+        <div>TOTAL</div>
+        <div>TOTAL</div>
+        <div>TOTAL</div>
+      </div>
+      <Link to="/order">
       <button className='checkout-button' type="button" disabled={cart.length === 0}>
           Proceed to Checkout
-        </button>
+      </button>
+      </Link>
       </div> 
       </div>
       
