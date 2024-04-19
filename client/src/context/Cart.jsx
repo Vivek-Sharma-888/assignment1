@@ -8,6 +8,7 @@ const Cart = createContext();
 const CartProvider =({children})=>{
 
     const [products,SetProducts] = useState([])
+    
     const getProducts =async()=>{
      const res = await axios.get(ProductUrl)
        SetProducts(res.data)
@@ -16,11 +17,12 @@ const CartProvider =({children})=>{
      getProducts();
     },[])
 
+
     const initialstate ={
         cart:[]
     } ;
     const [state,dispatch] = useReducer(cartReducer,initialstate) ;
-
+    
     return (
         <Cart.Provider value={{products,state,dispatch}}>
          {
